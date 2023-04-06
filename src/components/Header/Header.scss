@@ -1,0 +1,72 @@
+.Header {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 32px;
+
+    @media screen and (min-width: 1024px) {
+      padding: 32px 0;
+    }
+
+    &-Inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (min-width: 1024px) {
+          width: 960px;
+          margin: 0 auto;
+      }
+      @media screen and (min-width: 1300px) {
+        width: 1260px;
+      }
+    }
+
+    &-Hamburger {
+      width: 30px;
+      height: 30px;
+
+      path {
+        fill: var(--color-bg-secondary);
+      }
+      @media screen and (min-width: 1024px) {
+          display: none;
+        }
+    }
+
+    &-Nav {
+      display: none;
+      @media screen and (min-width: 1024px) {
+          display: flex;
+          align-items: center;
+      }
+    }
+
+    &-Link {
+      display: block;
+      color: var(--color-black);
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 16px;
+      margin-right: 48px;
+      transition: text-shadow 0.3s ease-out;
+
+      &:hover {
+        text-shadow: 0.7px 0 0 var(--color-secondary);
+      }
+    }
+
+    &-Button {
+      margin-right: 32px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-Secondary {
+      position: initial;
+      background-color: var(--color-text-primary);
+    }
+
+  }

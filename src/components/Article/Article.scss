@@ -1,0 +1,122 @@
+/* Course */
+.Course {
+    text-align: center;
+  }
+  
+  .Course:hover .Course-title,
+  .Course:hover .Course-subtitle {
+    color: var(--color-primary);
+  }
+  
+  .Course-figure {
+    height: 275px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+  
+  .Course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-out;
+  }
+  
+  .Course-image:hover {
+    transform: scale(1.2);
+  }
+  
+  .Course-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  
+  .Course-subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #696969;
+  }
+
+  /* Grid */
+.grid {
+  display: grid;
+  gap: 48px;
+}
+
+@media screen and (min-width: 481px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/* Section */
+.Section {
+  padding: 60px 24px;
+  /* padding: 120px 0; */
+}
+
+.Section_secondary {
+  background-color: #f6fafb;
+}
+
+.Section-helper-text {
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.Section-Header {
+  margin-bottom: 48px;
+}
+
+.Section-Title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .Section-Title {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .Section-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Section-Title {
+    font-size: 36px;
+  }
+
+  .Section-Inner {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .Section-Inner {
+    width: 1260px;
+  }
+}
